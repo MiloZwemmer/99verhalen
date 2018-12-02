@@ -1,0 +1,166 @@
+/* all pages */
+
+#Retlogo {
+    width: 30%;
+    margin-left: 37%;
+    margin-bottom: 2%
+}
+
+header {
+    background-color: white;
+    padding-top: 5%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+body {
+    background-color: #ebebec;
+}
+
+
+/* index */
+
+h1 {
+    background-color: #ed192c;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 1.8em;
+    padding: 3%;
+    margin: 0;
+    text-align: center;
+}
+
+/* Uitgelicht banner */
+#aanbevolen {
+    background-color: #3e3739;
+    border-radius: .3em;
+    margin-top: 10em;
+}
+
+article > img {
+    max-width: 100%;
+}
+
+article > h2 {
+    padding-left: 4%;
+    padding-top: 3%;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-bottom: 2%;
+    font-size: 1.3em
+}
+
+/* genres keuze menu */
+#genres {
+    background-color: #3e3739;
+    border-radius: .3em;
+}
+
+#genres > h2 {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding: 2%;
+    margin-bottom: 0;
+
+}
+
+figure {
+    background-color: #ed192c;
+    text-align: center;
+    padding-top: 1em;
+    border-radius: 0.8em;
+    width: 25%;
+    float: left;
+    margin: 4%
+}
+
+figure > img {
+    width: 90%
+}
+
+figcaption {
+    color: white;
+    font-family: sans-serif;
+}
+
+/* resultaten */
+#first {
+    margin-top: 38%
+}
+
+article {
+    background-color: #3e3739;
+    border-radius: .3em;
+}
+
+article > img {
+    height: 10em;
+    width: 100%;
+}
+
+/*dropdown bij resultaten 
+Bron: https://www.w3schools.com/howto/howto_js_dropdown.asp */
+
+/* Dropdown Button */
+.dropdownButton {
+    background-color: #00477F;
+    color: white;
+    padding: 1em;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropdownButton:hover,
+.dropdownButton:focus {
+    background-color: black;
+}
+
+/* positie van de nav */
+.dropdown {
+    position: fixed;
+    right: 0;
+    display: inline-block;
+    margin-top: 0em
+}
+
+/* standaard hidden */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #00477F;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+/* filter opties in dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: black;
+}
+
+/* Show the dropdown menu (voor js) */
+.show {
+    display: block;
+}
+
+#fIcon {
+    width: 1.3em;
+    background-color:
+}
