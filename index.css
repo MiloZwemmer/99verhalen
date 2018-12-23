@@ -1,4 +1,41 @@
 /* all pages */
+.search-box {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 4em;
+    padding: 1em;
+}
+
+.search-btn {
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.search-text {
+    border: none;
+    background: none;
+    outline: none;
+    float: right;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0%;
+}
+
+.search-btn:hover > .search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
 
 #Retlogo {
     max-width: 7em;
@@ -10,6 +47,7 @@
 }
 
 header {
+    display: flex;
     background-color: white;
     z-index: 1;
     top: 0;
@@ -17,7 +55,13 @@ header {
     right: 0;
     padding-top: 1em;
     position: fixed;
+    flex-direction: row
+}
 
+header > a > img {
+    max-width: 2em;
+    background-color: #ed192c;
+    padding: .5em
 }
 
 body {
@@ -72,6 +116,19 @@ article > p {
     color: #00477F;
 }
 
+a > article > h2 {
+    padding-bottom: .5em;
+    border-bottom-style: solid;
+    border-bottom-color: #ed192c;
+    display: table-cell;
+    margin-left: .8em;
+    padding-top: 3%;
+    color: #00477F;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size:
+}
+
 /* genres keuze menu */
 section#genres {
     background-color: white;
@@ -120,4 +177,3 @@ figcaption {
     font-family: sans-serif;
 
 }
-
