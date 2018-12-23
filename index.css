@@ -1,41 +1,4 @@
 /* all pages */
-.search-box {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    height: 4em;
-    padding: 1em;
-}
-
-.search-btn {
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #2f3640;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-.search-text {
-    border: none;
-    background: none;
-    outline: none;
-    float: right;
-    padding: 0;
-    color: white;
-    font-size: 16px;
-    transition: 0.4s;
-    line-height: 40px;
-    width: 0%;
-}
-
-.search-btn:hover > .search-txt {
-    width: 240px;
-    padding: 0 6px;
-}
 
 #Retlogo {
     max-width: 7em;
@@ -71,12 +34,15 @@ body {
 
 /* index */
 section#welkom {
-    background-color: white
+    background-color: white;
 }
 
 section#welkom > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
-    max-height: 100%;
+    max-height: 12em;
     margin-top: 5em
 }
 
@@ -86,28 +52,48 @@ h1 {
     color: white;
     font-weight: 500;
     font-size: 1.8em;
-    padding: 3%;
+    padding: .2em;
     margin: 0;
     text-align: center;
+
+}
+
+section.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 /* Uitgelicht banner */
 #aanbevolen {
     background-color: white;
     border-radius: .3em;
-    margin-top: 1em;
     box-shadow: .2em .3em #e3e3e4;
 }
 
 article > img {
-    width: 93%;
-    margin-left: .8em;
-    margin-right: .8em;
-    margin-top: 1em;
+    height: 8em;
+    width: 20em;
+    margin-left: 0;
+    margin-top: 0;
 }
 
 a {
     text-decoration: none;
+}
+
+article {
+    background-color: white;
+    border-radius: .3em;
+    box-shadow: .2em .3em #e3e3e4;
+    margin-top: 1.5em;
+    width: 20em;
+    padding: 1em;
+    padding-bottom: 0;
+    text-decoration: none;
+    font-size: 1em;
+    margin-left: .5em;
+    height: 20em
 }
 
 article > p {
@@ -122,23 +108,29 @@ a > article > h2 {
     border-bottom-color: #ed192c;
     display: table-cell;
     margin-left: .8em;
-    padding-top: 3%;
     color: #00477F;
     font-family: sans-serif;
     font-weight: 500;
-    font-size:
 }
 
 /* genres keuze menu */
-section#genres {
+nav#genres {
     background-color: white;
     border-radius: .3em;
     display: flex;
     flex-wrap: wrap;
     margin-top: 5%;
+    background-color: white;
+    border-radius: .3em;
+    box-shadow: .2em .3em #e3e3e4;
+    margin-top: 1.5em;
+    width: 20em;
+    padding: 1em;
+    text-decoration: none;
+    margin-left: .5em;
 }
 
-section#genres > h2 {
+nav#genres > h2 {
     color: #00477F;
     font-family: sans-serif;
     font-weight: 500;
@@ -151,23 +143,22 @@ section#genres > h2 {
     width: 80%;
 }
 
-section#genres a {
+nav#genres a {
     background-color: #00477F;
     text-align: center;
-    border-radius: .8em;
+    border-radius: .3em;
     width: calc(33% - 1rem);
     margin: .5rem;
     text-decoration: none;
 }
 
-section#genres figure {
+nav#genres figure {
     margin: 0;
-    box-shadow: .2em .3em #e3e3e4;
     background-color: #00477F;
     border-radius: .3em
 }
 
-section#genres figure > img {
+nav#genres figure > img {
     width: 100%;
 
 }

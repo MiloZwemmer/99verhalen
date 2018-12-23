@@ -8,9 +8,8 @@
     margin-right: auto;
     margin-bottom: 1em
 }
- {
-    text-decoration: none
-}
+
+
 header {
     background-color: white;
     z-index: 1;
@@ -27,7 +26,7 @@ h1 {
     color: white;
     font-weight: 500;
     font-size: 1.8em;
-    padding: 3%;
+    padding: .5em;
     margin: 0;
     text-align: center;
 }
@@ -36,48 +35,7 @@ body {
     background-color: #ebebec;
 }
 
-/* resultaten */
-#first {
-    margin-top: 13em
-}
 
-article {
-    background-color: white;
-    border-radius: .3em;
-    box-shadow: .2em .3em #e3e3e4;
-    margin-top: 1.5em;
-    width: 22em;
-    padding: 1em;
-    padding-bottom: 0;
-    text-decoration: none;
-    font-size: 1em;
-}
-
-section > a {
-    text-decoration: none;
-}
-
-
-a > article > h2 {
-    padding-bottom: .5em;
-    border-bottom-style: solid;
-    border-bottom-color: #ed192c;
-    display: table-cell;
-    margin-left: .8em;
-    padding-top: 3%;
-    color: #00477F;
-    font-family: sans-serif;
-    font-weight: 500;
-
-
-}
-
-article > img {
-    height: 10em;
-    width: 22em;
-    margin-left: 0;
-    margin-top: 0;
-}
 
 /* home */
 .home {
@@ -85,6 +43,12 @@ article > img {
     color: white;
     padding: 1em;
     font-size: 1em;
+    
+}
+
+.home:hover {
+    background-color: #d4effc;
+    color: #00477F; 
 }
 
 /*dropdown bij resultaten 
@@ -115,22 +79,25 @@ Bron: https://www.w3schools.com/howto/howto_js_dropdown.asp */
     margin-top: 0em
 }
 
+
 /* standaard hidden */
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #00477F;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 20em;
+    box-shadow: 0em .8em 1.6em 0em rgba(0, 0, 0, 0.2);
     z-index: 2;
 }
 
 /* filter opties in dropdown */
 .dropdown-content a {
-    padding: 12px 16px;
+    padding: .6em;
     text-decoration: none;
     display: block;
     color: white;
+    font-family: sans-serif;
+    font-weight: 500;
 }
 
 .dropdown-content a:hover {
@@ -142,6 +109,66 @@ Bron: https://www.w3schools.com/howto/howto_js_dropdown.asp */
     display: block;
 }
 
-#fIcon {
+#icon {
     width: 1.6em;
+}
+
+/* resultaten */
+
+article {
+    background-color: white;
+    border-radius: .3em;
+    box-shadow: .2em .3em #e3e3e4;
+    margin-top: 1.5em;
+    width: 20em;
+    padding: 1em;
+    padding-bottom: 0;
+    text-decoration: none;
+    font-size: 1em;
+    margin-left: .5em;
+}
+
+section > a {
+    text-decoration: none;
+}
+
+
+a > article > h2 {
+    padding-bottom: .5em;
+    border-bottom-style: solid;
+    border-bottom-color: #ed192c;
+    display: table-cell;
+    margin-left: .8em;
+    padding-top: 3%;
+    color: #00477F;
+    font-family: sans-serif;
+    font-weight: 500;
+
+
+}
+
+article > img {
+    height: 10em;
+    width: 20em;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+section.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 12em;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-decoration: none;
+
+}
+
+article > p {
+    padding-bottom: .8em;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 500;
+    
 }
