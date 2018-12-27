@@ -168,3 +168,26 @@ figcaption {
     font-family: sans-serif;
 
 }
+
+/* laptops/desktops */
+@media only screen and (min-width: 992px) {
+
+    
+    #aanbevolen {
+        width: 30em;
+    }
+
+    article {
+        padding: 2em;
+        padding-bottom: 1em
+    }
+
+    article > img {
+        width: 30em;
+        height: 12em;
+    }
+    
+    nav#genres {
+        width: 25em
+    }
+}
