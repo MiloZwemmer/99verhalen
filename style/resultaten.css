@@ -115,6 +115,7 @@ Bron: https://www.w3schools.com/howto/howto_js_dropdown.asp */
 
 /* resultaten */
 h2 {
+    margin-top: 2em;
     width: 100%;
     color: #00477F;
         margin-left: .5em;
