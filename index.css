@@ -182,9 +182,9 @@ figcaption {
         padding-bottom: 1em
     }
 
-    article > img {
+    section#welkom > img {
         width: 30em;
-        height: 12em;
+        height: 300em;
     }
     
     nav#genres {
