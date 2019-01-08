@@ -61,7 +61,7 @@ h1 {
 }
 
 /* Uitgelicht banner */
-article#aanbevolen {
+article {
     background-color: white;
     border-radius: .3em;
     box-shadow: .2em .3em #e3e3e4;
@@ -173,7 +173,6 @@ nav#genres > h2 {
 }
 
 nav#genres a {
-    background-color: #00477F;
     text-align: center;
     border-radius: .3em;
     width: calc(33% - 1rem);
