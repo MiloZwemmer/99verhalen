@@ -33,17 +33,37 @@ h1 {
 }
 
 /* home */
+
+section.navbar {
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 120%;
+    height: 3.8em;
+    background-color: #005c87;
+}
+
 .home {
     background-color: #00477F;
     color: white;
     padding: 1em;
     font-size: 1em;
-    
+}
+
+.search-btn {
+    background-color: #00477F;
+    color: white;
+    padding: 1em;
+}
+
+.search-btn > img {
+    width: 2em
 }
 
 .home:hover {
     background-color: #d4effc;
-    color: #00477F; 
+    color: #00477F;
 }
 
 /*dropdown bij resultaten 
@@ -66,13 +86,7 @@ Bron: https://www.w3schools.com/howto/howto_js_dropdown.asp */
     color: #00477F;
 }
 
-/* positie van de nav */
-.dropdown {
-    position: fixed;
-    right: 0;
-    display: inline-block;
-    margin-top: 0em
-}
+/* positie van de nav *
 
 
 /* standaard hidden */
@@ -81,7 +95,7 @@ Bron: https://www.w3schools.com/howto/howto_js_dropdown.asp */
     position: absolute;
     background-color: #00477F;
     min-width: 5em;
-    box-shadow: 0em .8em 1.6em 0em rgba(0, 0, 0, 0.2);
+    box-shadow: 0em .8em 1.6em .3em rgba(0, 0, 0, 0.2);
     z-index: 2;
 }
 
@@ -110,11 +124,12 @@ Bron: https://www.w3schools.com/howto/howto_js_dropdown.asp */
 
 /* resultaten */
 h2 {
-    margin-top: 2em;
+    margin-top: 4em;
     width: 100%;
     color: #00477F;
-        margin-left: .5em;
+    margin-left: .5em;
 }
+
 article {
     background-color: white;
     border-radius: .3em;
@@ -158,7 +173,7 @@ section.results {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 12em;
+    margin-top: 8.8em;
     margin-left: 3%;
     margin-right: 3%;
     text-decoration: none;
@@ -170,5 +185,21 @@ article > p {
     text-decoration: none;
     font-family: sans-serif;
     font-weight: 500;
-    
+
+}
+
+/* landscape tablets */
+@media only screen and (min-width: 768px) {
+    section.navbar {
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+/* laptops/desktops */
+@media only screen and (min-width: 62em) {
+    section.navbar {
+        justify-content: space-between;
+        width: 100%;
+    }
 }
