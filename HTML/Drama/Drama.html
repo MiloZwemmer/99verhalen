@@ -18,12 +18,13 @@
 
         <nav class="dropdown">
             <button onclick="myFunction()" class="dropdownButton">geen filter geselecteerd <img src="../../afbeeldingen/witte%20filter%20kopie.png" alt="" id="icon"></button>
-            <nav id="filters" class="dropdown-content">
-                <a href="dKort.html">Leesduur kort - lang</a>
-                <a href="dLang.html">Leesduur lang - kort</a>
-                <a href="dpopulair.html">populair</a>
-                <a href="d">alfabetisch</a>
-            </nav>
+            <form id="filters" class="dropdown-content">
+                <input type="radio" name="filter" value="Leesduur kort - lang" checked> Leesduur kort - lang<br>
+                <input type="radio" name="filter" value="Leesduur lang - kort"> Leesduur lang - kort<br>
+                <input type="radio" name="gender" value="Populair"> Populair <br>
+                <input type="radio" name="gender" value="Alfabetisch"> Alfabetisch
+                <submit></submit>
+            </form>
             <a class="search-btn" href="#"> <img src="../../afbeeldingen/white%20search%20icon%20kopie.png" alt=""> </a>
         </nav>
     </section>

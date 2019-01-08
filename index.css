@@ -61,7 +61,7 @@ h1 {
 }
 
 /* Uitgelicht banner */
-#aanbevolen {
+article#aanbevolen {
     background-color: white;
     border-radius: .3em;
     box-shadow: .2em .3em #e3e3e4;
@@ -109,13 +109,13 @@ a > article > h2 {
     font-weight: 500;
 }
 /* zoekbalk */
-search-box {
+.search-box {
     transform: translate(-50%, -50%);
     padding: 1em;
     background-color: 
 }
 
-.search-btn {
+a.search-btn {
     width: 4em;
     height: 4em;
     display: flex;
