@@ -1,5 +1,9 @@
+* {
+    margin: 0;
+}
+
 body {
-    background-color: #ebebec;
+    background-color: #ebebec
 }
 
 header {
@@ -47,6 +51,7 @@ section.navbar {
 .home {
     background-color: #00477F;
     color: white;
+    padding-top: 6em;
     padding: 1em;
     font-size: 1em;
 }
@@ -113,6 +118,26 @@ Bron: https://www.w3schools.com/howto/howto_js_dropdown.asp */
     background-color: black;
 }
 
+input[type=radio] {
+    visibility: hidden;
+    position: absolute;
+}
+
+form label {
+    display: block;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+input[type=radio] + label {
+    color: white;
+}
+
+input[type=radio]:checked + label {
+    color: yellow;
+}
+
+
 /* Show the dropdown menu (voor js) */
 .show {
     display: block;
@@ -128,6 +153,24 @@ h2 {
     width: 100%;
     color: #00477F;
     margin-left: .5em;
+}
+
+@keyframes resultaten {
+    80% {
+        font-size: 1.8em;
+    }
+    20% {
+        margin-top: 8em
+    }
+}
+
+h2:first-child {
+    margin-top: 4em;
+    width: 100%;
+    color: #00477F;
+    margin-left: .5em;
+    animation-name: resultaten;
+    animation-duration: 2s;
 }
 
 article {
@@ -158,6 +201,7 @@ a > article > h2 {
     color: #00477F;
     font-family: sans-serif;
     font-weight: 500;
+    padding-bottom: .2em
 
 
 }
@@ -182,6 +226,7 @@ section.results {
 
 article > p {
     padding-bottom: .8em;
+    padding-top: 1em;
     text-decoration: none;
     font-family: sans-serif;
     font-weight: 500;

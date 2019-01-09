@@ -202,15 +202,11 @@ nav#genres figure:hover {
 /* laptops/desktops */
 @media only screen and (min-width: 62em) {
 
-
-    #aanbevolen {
-        width: 30em;
-    }
-
     article {
         padding: 1.5em;
         padding-bottom: 1em;
-        margin-right: 2em
+        margin-right: 2em;
+        width: 30em
     }
 
     article > img {
