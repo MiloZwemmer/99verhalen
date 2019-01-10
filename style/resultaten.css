@@ -54,50 +54,52 @@ a.home {
     padding-top: 6em;
     padding: 1.5em;
     font-family: sans-serif;
-    margin-right: .3em
-    
+    margin-right: .5em
 }
 
-.search-btn {
+a.search-btn {
     background-color: #00477F;
     color: white;
     padding: 1em;
     padding-top: 1.7em;
-
-
 }
 
-.search-btn > img {
+a.search-btn > img {
     width: 2em;
     background-color: #00477F;
     padding-right: .8em;
-
-    
 }
 
-.home:hover {
-    background-color: #d4effc;
-    color: #00477F;
+a.search-btn > img:hover {
+    background-color: #009ddb;
+}
+
+a.search-btn:hover {
+    background-color: #009ddb;
+}
+
+a.home:hover {
+    background-color: #009ddb;
 }
 
 /*dropdown bij resultaten 
 Bron: https://www.w3schools.com/howto/howto_js_dropdown.asp */
 
 /* Dropdown Button */
-.dropdownButton {
+button.dropdownButton {
     background-color: #00477F;
     color: white;
     padding: 1em;
     font-size: 1em;
     border: none;
     cursor: pointer;
+    margin-right: .2em;
 }
 
 /* Dropdown button on hover & focus */
 .dropdownButton:hover,
 .dropdownButton:focus {
-    background-color: #d4effc;
-    color: #00477F;
+    background-color: #009ddb;
 }
 
 /* positie van de nav *
@@ -114,18 +116,6 @@ Bron: https://www.w3schools.com/howto/howto_js_dropdown.asp */
 }
 
 /* filter opties in dropdown */
-.dropdown-content a {
-    padding: .6em;
-    text-decoration: none;
-    display: block;
-    color: white;
-    font-family: sans-serif;
-    font-weight: 500;
-}
-
-.dropdown-content a:hover {
-    background-color: black;
-}
 
 input[type=radio] {
     visibility: hidden;
@@ -136,14 +126,19 @@ form label {
     display: block;
     padding-left: 1em;
     padding-right: 1em;
-}
-
-input[type=radio] + label {
+    padding-bottom: .5em;
+    padding-top: .5em;
+    font-family: sans-serif;
+    font-weight: 500;
     color: white;
 }
 
+form label:hover {
+    background-color: #009ddb;
+}
+
 input[type=radio]:checked + label {
-    color: yellow;
+    background-color: #3e3739;
 }
 
 
