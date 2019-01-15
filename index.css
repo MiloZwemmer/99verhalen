@@ -53,7 +53,7 @@ h1 {
     font-family: sans-serif;
     color: white;
     font-weight: 500;
-    font-size: 1.8em;
+    font-size: 1.6em;
     padding: .2em;
     margin: 0;
     text-align: center;
@@ -107,6 +107,7 @@ a > article > h2 {
     color: #00477F;
     font-family: sans-serif;
     font-weight: 500;
+    font-size: 1.3em
 }
 /* zoekbalk */
 .search-box {
@@ -199,9 +200,19 @@ figcaption {
 nav#genres figure:hover {
     background-color: #009ddb;
 }
+/* landscape tablets */
+@media only screen and (min-width: 768px) {
+    h1 {
+        text-align: left;
+        padding-left: 5%
+    }
+}
 /* laptops/desktops */
 @media only screen and (min-width: 62em) {
-
+    h1 {
+        text-align: left;
+        padding-left: 14% 
+    }
     article {
         padding: 1.5em;
         padding-bottom: 1em;

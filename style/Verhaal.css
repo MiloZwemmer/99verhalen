@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white
+}
+
+header > img {
+    max-width: 7em;
+    max-height: 3em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+a {
+    background-color: #00477F;
+    color: white;
+    padding: 1em;
+    padding-bottom: 0em;
+    font-family: sans-serif;
+    height: 2em;
+    margin: 1em;
+    margin-left: .5em;
+    margin-right: .5em;
+    border-radius: .3em;
+    text-decoration: none;
+}
+a:hover {
+    background-color: #009ddb;
+}
+
+section.titel {
+    padding-top: 10em;
+    padding-right: 5em;
+    background-image: url(../afbeeldingen/ongeluk.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+body {
+    background-color: #3c3c3b
+}
+
+section.tekst {
+    display: flex;
+    justify-content: center;
+}
+
+section.tekst > img {
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    margin-left: 2em;
+    margin-top: 3em
+}
+
+section > p {
+    width: 24em;
+    margin-left: 4em;
+    color: whitesmoke;
+    font-family: monospace;
+}
+
+@media only screen and (min-width: 768px) {
+    section.titel {
+        background-image: url(../afbeeldingen/OngelukBig.png);
+        background-repeat: no-repeat;
+        background-size: 56em
+    }
+
+    section > p {
+        width: 30em
+    }
+    section.tekst > img {
+        width: 36em;
+        margin-top: 4em;
+        height: 26em
+    }
+}
+
+/* laptops/desktops */
+@media only screen and (min-width: 62em) {
+    section.titel {
+        background-size: 80em;
+        padding-bottom: 4em
+    }
+
+    section > p {
+        margin-top: 5em;
+        width: 40em
+    }
+}
