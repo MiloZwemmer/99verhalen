@@ -1,3 +1,5 @@
+
+
 /* wanneer de gebruiker op de knop drukt switchen de filters naar show */
 function myFunction() {
     document.getElementById("filters").classList.toggle("show");
@@ -37,3 +39,13 @@ function filterLang() {
     filterForm.submit();
 }
 leesduurlang.addEventListener('click', filterLang);
+
+// expandable searchbar 
+jQuery(document).ready(function(){
+  
+  jQuery(".fa-search").click(function(){
+    jQuery(".container, .input").toggleClass("active");
+    jQuery("input[type='text']").focus();
+  });
+  
+});
