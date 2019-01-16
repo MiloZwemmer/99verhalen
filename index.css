@@ -209,12 +209,23 @@ nav#genres figure:hover {
 
 /* zoekbalk */
 
-.wrapper{
+header > nav{
   position: absolute;
   top: 50%;
   left: 90%;
   transform: translate(-50%, -50%);
 } 
+header nav form input {
+    -webkit-appearance: none
+    margin-top: -10em;
+    width: 100%;
+    height: 2em;
+    border: 1px solid black;
+    background-color: white;
+}
+header nav form input.active {
+    margin-top: 1em;
+}
 
 .container{
   width: 0px;
