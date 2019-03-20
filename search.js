@@ -5,7 +5,7 @@ var RETlogo = document.querySelector('header img')
 
 function zoekklapt() {
     zoekForm.classList.toggle('active');
- containerForm.classList.toggle('active');
+    containerForm.classList.toggle('active');
     RETlogo.classList.toggle('move')
     zoekKnop.classList.toggle('checked')
     
